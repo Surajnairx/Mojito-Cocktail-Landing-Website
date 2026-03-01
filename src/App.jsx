@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 function App() {
   return (
     <div>
-      <h1>hello world</h1>
+      <h1 className="flex-center">hello world</h1>
     </div>
   );
 }
