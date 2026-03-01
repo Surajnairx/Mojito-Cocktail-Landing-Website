@@ -1,5 +1,6 @@
 import { navLinks } from "../../static data";
 import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import logo from "/images/logo.png";
 function Navbar() {
   useGSAP(() => {
@@ -31,7 +32,7 @@ function Navbar() {
         </a>
         <ul>
           {navLinks.map((link) => (
-            <li>
+            <li key={link.id}>
               <a href={link.id}>{link.title}</a>
             </li>
           ))}
